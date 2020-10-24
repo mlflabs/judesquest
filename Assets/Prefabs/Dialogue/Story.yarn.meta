@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 476ca877ede9142f3b78032495531b64
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-CA
+  stringIDs:
+  - Story-Start-0
+  - Story-Start-1
+  - Story-Start-2
+  - Story-Start-3
+  - Story-Start-4
+  - Story-Continue-5
+  - Story-ElectedMayor-6
+  - Story-ElectedMayor-7
+  - Story-ElectedMayor-8
+  - Story-ElectedMayor-9
+  - Story-ElectedMayor-10
+  - Story-ElectedMayor-11
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 476ca877ede9142f3b78032495531b64, type: 3}
+  localizations: []

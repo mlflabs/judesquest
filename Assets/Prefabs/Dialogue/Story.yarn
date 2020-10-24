@@ -1,0 +1,288 @@
+title: Start
+tags: 
+colorID: 0
+position: 727,141
+---
+Mike: Hey there whats going going
+Bob: Thanks for being 3 meeters away from me, we want to stay safe.
+Mike: What can I do for you?
+<<set $suspect_steve to 1>>
+[[I’ve only been back for like 24 hours.|BackFor24Hours]]
+[[Yes. I’ve been elected mayor.|ElectedMayor]]
+===
+title: ElectedMayor
+tags: 
+colorID: 1
+position: 746,449
+---
+Here are some choices
+-> Here 
+    Text After Here
+    <<set $suspect_steve33 to 1>>
+-> Where do you want to go?
+    Text After this option
+    <<set $suspect_stevedeeee to 1>>
+Here is some text at the end....
+<<set $suspect_stevesdsd to 1>>
+===
+title: Noah
+tags: 
+colorID: 0
+position: 1693,887
+---
+<<if $introducedNoah is false>>
+  Jude: Hey Noah
+  Noah: Hey Jude, you seem different today.
+  Jude: Yup, this is the best day of my life.  Mike called me and he wants to play "THE VIDEO GAME" together.
+  Noah: Mike called you, the super duper cool Mike, who's all around nice guy called you, whoa, I'm jealous. Why aren't you playing right this moment, why are you out.
+  Jude: There is only one slight problem, I don't have the game, its super cool game, and not cheap, infact its way over my budget, a whole 10 monies.
+  Noah: 10 monies, thats some serious dough, well since we are talking about the super duper cool Mike, Ill help you.
+  Jude: Cool, can you give me some monies. Its for a good cause.
+  Noah: I have 1 monies, Ill give you, but first you will have to help me find my boom box speakers, I can't seem to find them. I need them to keep improving my rad guitar skills. Please help me find them.
+  Jude: Ok, ill look for them
+  Noah: Cool thanks.
+<<set $introducedNoah to true>>
+[[ NoahOptions1 ]]
+<<else>>
+Jude: Hey Noah
+[[ NoahOptions1 ]]
+
+<<endif>>
+===
+title: Adin
+tags: 
+colorID: 0
+position: 1976,886
+---
+<<if $introducedAdin is false>>
+  Jude: Hey Adin
+  Adin: Hey are you following me. 
+  Jude: No, well maybe, I need some monies.
+  Adin: Monies, what for?
+  Jude: Mike, or I should say The Mike, the coolest Canadian all star video game player, all around cool guy called me and wants to play THE VIDE GAME with me.
+  Adin: Wow that kind of invitation comes once, maybe twice in a life time.  Let me guess you don't have THE VIDEO GAME right?
+  Jude: If I did I wouldn't be here right.  Yes I need monies to buy it, its a fortune a whole 10 monies.
+  Adin: Well I can help you, but first I need something from you.  I need a..........
+  Jude: a what?
+  Adin: A magnet.
+  Jude: Magnet?
+  Adin: You wouldn't understand,  magnets are the next best thing, you know, they look cool, and they stick to things.
+  Jude: Ok, Ill search for a magnet.
+  Adin: When you get one, find me, I have some moneis for you.
+<<set $introducedAdin to true>>
+[[ AdinOptions1 ]]
+<<else>>
+Jude: Hey Adin
+[[ AdinOptions1 ]]
+
+<<endif>>
+===
+title: Jada
+tags: 
+colorID: 0
+position: 1434,883
+---
+<<if $introducedJada is false>>
+  Jude: Hey Jada howz it going
+  Jada: Like you would understand, Im looking for Pine cones.
+  Jude: Pine Cones?
+  Jada: Like the greatest thing ever,Like you would not understand your too young.
+  Jude: Well Im looking for monies, I need to buy "THE VIDEO GAME"
+  Jada: "THE VIDEO GAME", Like its multiplayer, Like you don't have any friends to play with
+  Jude: Only the most cool guy, Mike called me, he wants to play
+  Jada: Mike, Like his so cool, Like the best video game player in the universe, Like  I'll help you, if you can get me 18 pine cones, Like I'll give you like 2 monies
+<<set $introducedJada to true>>
+[[ JadaOptions1 ]]
+<<else>>
+Jude: Hey Jada
+[[ JadaOptions1 ]]
+
+<<endif>>
+===
+title: MrLu
+tags: 
+colorID: 0
+position: 1150,886
+---
+<<if $introducedMrLu is false>>
+  Jude: Hey Mr Lu, what are you up to these days.
+  Mr Lu: Just training my mad Hacking skills, I want to be as good as The Mike.
+  Jude: Ya, Mike is full of suprises, super cool, funny, best video game player and he is a mad hacker.
+  Mr Lu: Yea, I want to become just like him.
+  Jude: Speaking of Mike, he called me today and he wants to play THE VIDEO GAME with me.
+  Mr Lu: THE VIDEO GAME, thats so cool, so why aren't you playing with him.
+  Jude: I don't have the game, I need monies to buy it.
+  Mr Lu: I have 1 monies, I can give it to you, but first can you help me find my pillow.
+  Jude: Pillow?
+  Mr Lu: To become a great hacker, you need good rest, so I carry my pillow everywhere with me, this way I can get a nap any time. But I can't seem to remember where I left it last time.
+  Jude: For some monies to get THE VIDEO GAME to play with the all around cool dude Mike I'll find anything.
+  Mr Lu: Thanks
+<<set $introducedMrLu to true>>
+[[ MrLuOptions1 ]]
+<<else>>
+[[ MrLuOptions1 ]]
+
+<<endif>>
+===
+title: JadaOptions1
+tags: 
+colorID: 0
+position: 1425,1133
+---
+-> How many pine cones do you need <<if $jadaGameMoney1 is false >>
+   Jada: Like your memory is so bad, I need like 5 pine cones
+   [[ Jada ]]
+-> I got your pine cones <<if userHasItemAmount("Pinecone",18) is true and $jadaGameMoney1 is false >>
+   Jada: Like how did you find them, like they are so brown, like the nices pine cones I have ever seen.  Like thank you. Here is your moneis like I primised.
+   <<playSound success >>
+   <<set $jadaGameMoney1 to true>>
+   <<addItemToUser Money 2 >> 
+   <<removeItemFromUser Pinecone 5 >> 
+   [[ Jada ]]
+-> Ok talk to you later
+===
+title: NoahOptions1
+tags: 
+colorID: 0
+position: 1693,1132
+---
+-> I forgot, what did you need me to find<<if $noahGameMoney1 is false >>
+   Noah: No problem, I'm sure your so excited to play with Mike, the all around cool dude, its easy to forget. Im looking for my speakers. Its a single brown speaker, looks like a little brown box. I can't jam without it.
+   [[ Noah ]] 
+-> I found your speaker<<if userHasItemAmount("Speaker",1) is true and $noahGameMoney1 is false >>
+   Noah: You found my speakers, now I can continue to jamming, thanks Jude. Here is your monies.
+   <<playSound success >>
+   <<set $noahGameMoney1 to true>>
+   <<addItemToUser Money 1 >> 
+   <<removeItemFromUser Speaker 1 >> 
+   [[ Noah ]]
+-> Ok talk to you later
+===
+title: AdinOptions1
+tags: 
+colorID: 0
+position: 1976,1131
+---
+-> I forgot, what did you need me to find?<<if $adinGameMoney1 is false >>
+   Adin: Don't worry, if Mike, the all around super cool guys called me to play THE VIDEO GAME, I would be forgetfull too. I need a magnet.
+   [[ AdinOptions1 ]] 
+-> I got a magnet<<if userHasItemAmount("Magnet",1) is true and $adinGameMoney1 is false >>
+   Adin: Wow that was fast, this is a cool magnet, I bet it could stick to anything. Thx, and here is your 2 monies.
+   <<playSound success >>
+   <<set $adinGameMoney1 to true>>
+   <<addItemToUser Money 2 >> 
+   <<removeItemFromUser Magnet 1 >> 
+   [[ AdinOptions1 ]]
+-> Ok talk to you later
+===
+title: MrLuOptions1
+tags: 
+colorID: 0
+position: 1111,1159
+---
+-> I forgot what did I suppose to find? <<if $mrLuGameMoney1 is false >>
+   Mr Lu: Don't worry, when I don't get my naps, I also start to forget things.  What did you ask me again. Without my pillow I can't get a nap, and witout a nap, I just don't remember anything.
+   [[ MrLuOptions1 ]] ]]
+-> Is this your pillow <<if userHasItemAmount("Pillow", 1) is true and $mrLuGameMoney1 is false >>
+   Mr Lu: Cool, how did you find it, how did you know I was looking for my pillow.
+   Jude: You told me you needed it and you will give me some monies if I found it for you.
+   Mr Lu: I did, well thanks, and here is 2 monies.
+   <<playSound success >>
+   <<set $mrLuGameMoney1 to true>>
+   <<addItemToUser Money 1 >> 
+   <<removeItemFromUser Pillow 1 >> 
+   [[ MrLuOptions1 ]]
+-> Ok talk to you later
+===
+title: Kezzie
+tags: 
+colorID: 0
+position: 1147,346
+---
+<<if $introducedKezzie is false>>
+  Jude: Hey Kezzie
+  Kezzie: Its a beautiful day today
+  Jude: Yes it is, its good to be alive
+  Kezzie: There seems to be something different about you, let me guess, did you start shaving?
+  Jude: No, why would you say that.
+  Kezzie: Dunno, so what's different
+  Jude: Only the coolest, smartest, strongest, all around cool Mike called me and asked me to play with him THE VIDEO GAME
+  Kezzie: That explains it, so you are here exercising to get stronger and faster for the THE VIDEO GAME.
+  Jude: Well no, Im here trying to get me some monies, THE VIDEO GAME is not cheap, I need some serious dough.
+  Kezzie: Well this is great, I have some monies that I can give you, and at the same time I also need help, we can help each other.
+  Jude: Sure, what help do you need?
+  Kezzie: Jada and Adin played a trick on me, they took all 5 of my teddy bears and hid them all around the neighborhood. Can you help me find them?
+  Jude: To play with Mike, the all around super duper cool all start and all around cool guy, I'll do anything.
+  Kezzie: Thanks Jude, and if I might say, this Mike is a really good influence on you.
+  Jude: Yes he is, thanks, I'll find you when I get those teddy bears. Have a great day.
+<<set $introducedKezzie to true>>
+[[ KezzieOptions1 ]]
+<<else>>
+Jude: Hey Adin
+[[ KezzieOptions1 ]]
+
+<<endif>>
+===
+title: Frank
+tags: 
+colorID: 0
+position: 1464,366
+---
+<<if $introducedFrank is false>>
+  Jude: Hey Maomao, I mean Frank
+  Frank: Hey Jude, whats up
+  Jude: I need monies for THE VIDEO GAME
+  Frank: I already have it, this game is so yesterday news.
+  Jude: Well the all around super duber cool Mike called me and asked me to play it with him.
+  Frank: Sooooooooo cool, you have some dope connections. When you get the game make sure to include me ok?
+  Jude: Sure do, we all can play together, but I still need those monies to buy THE VIDEO GAME, unless you can give it to me?
+  Frank: Well, now that Mike, all around super star, is playing it, Ill keep it.  But I have some moneis, I'll give it to you, but first can you help me find my fork.
+  Jude: Fork?
+  Frank: I always carry a fork with me, you just don't know when you will be hungry and need it. But I have seem to drop it somewhere, can you help me find it.
+  Jude: For some monies to play with the super cool Mike, Ill do anything.
+  Frank: Thanks
+
+<<set $introducedFrank to true>>
+[[ FrankOptions1 ]]
+<<else>>
+Jude: Hey Frank
+[[ FrankOptions1 ]]
+
+<<endif>>
+===
+title: KezzieOptions1
+tags: 
+colorID: 0
+position: 1138,628
+---
+-> I forgot, what did you need me to find?<<if $kezzieGameMoney1 is false >>
+   Kezzy: Not a problem at all, I need your help finding my 5 teddy bears
+   [[ KezzieOptions1 ]] 
+-> I got your teddy bears<<if userHasItemAmount("BigTeddy", 5) is true and $kezzieGameMoney1 is false >>
+   Kezzie: Jude, Mike has really changed you, your so reliable now, thanks a lot, and I hope you have fun playing THE VIDEO GAME with the all around super duper cool Mike.
+   Jude: Thanks Kezzie, when you need anything else just find me.
+   Kezzie: Will do. Bye
+   <<playSound success >>
+   <<set $kezzieGameMoney1 to true>>
+   <<addItemToUser Money 2 >> 
+   <<removeItemFromUser BigTeddy 5 >> 
+   [[ KezzieOptions1 ]]
+-> Ok talk to you later and have a great day
+===
+title: FrankOptions1
+tags: 
+colorID: 0
+position: 1498,626
+---
+-> I forgot, what did you need me to find?<<if $frankGameMoney1 is false >>
+   Frank: I don't seem to remember, I can't remember anything when Im hungry, and I can't seem to find my fork
+   [[ FrankOptions1 ]] 
+-> I found your fork<<if userHasItemAmount("Fork",1) is true and $frankGameMoney1 is false >>
+   Frank: Thanks a lot, I was getting really hungry. Here is your monies
+   <<playSound success >>
+   <<set $frankGameMoney1 to true>>
+   <<addItemToUser Money 2 >> 
+   <<removeItemFromUser Fork 1 >> 
+   [[ FrankOptions1 ]]
+-> Ok talk to you later
+===

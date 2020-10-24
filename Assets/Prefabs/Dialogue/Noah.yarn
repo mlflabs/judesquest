@@ -1,0 +1,107 @@
+title: Start
+tags: 
+colorID: 0
+position: 999,250
+---
+Mike: Hey there whats going going
+Bob: Thanks for being 3 meeters away from me, we want to stay safe.
+Mike: What can I do for you?
+<<set $suspect_steve to 1>>
+[[I’ve only been back for like 24 hours.|BackFor24Hours]]
+[[Yes. I’ve been elected mayor.|ElectedMayor]]
+===
+title: Continue
+tags: 
+colorID: 0
+position: 1387,286
+---
+This is second line
+===
+title: ElectedMayor
+tags: 
+colorID: 1
+position: 979,511
+---
+Here are some choices
+-> Here 
+    Text After Here
+    <<set $suspect_steve33 to 1>>
+-> Where do you want to go?
+    Text After this option
+    <<set $suspect_stevedeeee to 1>>
+Here is some text at the end....
+<<set $suspect_stevesdsd to 1>>
+===
+title: Noah
+tags: 
+colorID: 0
+position: 598,344
+---
+Noah: Hey hows it going
+
+<<if userHasItemAmount("Apple", 1) is true>>
+Noah: So you brought the apples
+<<else>>
+Noah No apples :(
+<<endif>>
+
+
+Jude: Super duper, life is soooooo good.
+Noah: Wow, what happened?
+Jude: I just had a call from Mike
+
+
+
+<<set $var to 1>>
+===
+title: Adin
+tags: 
+colorID: 0
+position: 609,605
+---
+Hey
+===
+title: Jada
+tags: 
+colorID: 0
+position: 1008,790
+---
+<<if $introducedJada is false>>
+  Jude: Hey Jada howz it going
+  Jada: Like you would understand, Im looking for Pine cones.
+  Jude: Pine Cones?
+  Jada: Like the greatest thing ever,Like you would not understand your too young.
+  Jude: Well Im looking for monies, I need to buy "THE GAME"
+  Jada: "THE GAME", Like its multiplayer, you don't have any friends to play with
+  Jude: Only the most cool guy, Mike called me, he wants to play
+  Jada: Mike, His so cool, Like the best video game player in the universe, well I'll help you, if you can get me 5 pine cones, ill give you like 2 monies
+<<set $introducedJada to true>>
+[[ JadaOptions1 ]]
+<<else>>
+Jude: Hey Jada
+[[ JadaOptions1 ]]
+
+<<endif>>
+===
+title: MrLu
+tags: 
+colorID: 0
+position: 601,861
+---
+Hey
+===
+title: JadaOptions1
+tags: 
+colorID: 0
+position: 902,1041
+---
+-> How many pine cones do you need <<if $jadaGameMoney1 is false >>
+  Jada: Like your memory is so bad, I need like 5 pine cones
+  [[ Jada ]] ]]
+-> I got your pine cones <<if userHasItemAmount("Pinecone",5) is true and $jadaGameMoney1 is false >>
+  <<set $jadaGameMoney1 to true>>
+  <<addItemToUser("Money", 2) >> 
+  <<removeItemFromUser("Pinecone", 5) >> 
+  [[ Jada ]]
+-> Ok talk to you later
+===

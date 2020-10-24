@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!65 &1797320460617255138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3966570994173840270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.83, y: 6.73, z: 6.34}
+  m_Center: {x: 0.28, y: 0, z: 3.47}
+--- !u!114 &8663407587472092602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3966570994173840270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a039b0775f8a5407fbf5dd5c8175745d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHoldItemTypes: 
+  canHoldAllTypes: 1
+  _inventory:
+    maxItemSlots: 4
+    maxItemCapacity: 16
+    visibleItemSlots: 4
+    currentItemUsedCapacity: 0
+    items:
+    - item: {fileID: 11400000, guid: ca8fea33ca1fd4e76afe09fa22e82186, type: 2}
+      amount: 2
+      equipped: 0
+    canHoldItemTypes: 
+    canHoldAllTypes: 0
+--- !u!1001 &4309239628152747743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.10791
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10000038
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.163515
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_Name
+      value: grass Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+      propertyPath: m_TagString
+      value: Pickable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+--- !u!1 &3966570994173840270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e8db55faaa83457598da12c7138ce69, type: 3}
+  m_PrefabInstance: {fileID: 4309239628152747743}
+  m_PrefabAsset: {fileID: 0}

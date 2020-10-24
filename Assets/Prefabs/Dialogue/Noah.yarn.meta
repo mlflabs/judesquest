@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 87a077f9be324483193186e5c4a55e59
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-CA
+  stringIDs:
+  - Hello1-Start-0
+  - Hello1-Start-1
+  - Hello1-Start-2
+  - Hello1-Start-3
+  - Hello1-Start-4
+  - Hello1-Continue-5
+  - Hello1-BackFor24Hours-6
+  - Hello1-BackFor24Hours-7
+  - Hello1-ElectedMayor-8
+  - Hello1-ElectedMayor-9
+  - Hello1-ElectedMayor-10
+  - Hello1-ElectedMayor-11
+  - Hello1-ElectedMayor-12
+  - Hello1-ElectedMayor-13
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 87a077f9be324483193186e5c4a55e59, type: 3}
+  localizations: []

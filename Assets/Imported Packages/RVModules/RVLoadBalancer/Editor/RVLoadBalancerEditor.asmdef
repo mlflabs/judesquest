@@ -1,0 +1,14 @@
+{
+    "name": "RVLoadBalancerEditor",
+    "references": [
+        "GUID:29777498d8fd5a1498343693dd8d3616"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
